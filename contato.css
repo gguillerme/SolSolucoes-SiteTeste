@@ -54,6 +54,20 @@ nav ul li a {
     display: block;
 }
 
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        align-items: center; /* Centraliza os itens verticalmente */
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Adiciona espaçamento entre os itens */
+    }
+}
+
 main {
     padding: 20px 0;
 }
@@ -139,4 +153,9 @@ footer {
     text-align: center;
     padding: 20px 0;
     font-size: 16px;
+}
+
+img {
+    max-width: 100%; /* Define a largura máxima como 100% do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
 }
